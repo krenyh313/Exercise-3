@@ -32,6 +32,11 @@ footer  {
     height: 66px;
 }
 
+.Footer2    {
+    position: sticky;
+    bottom: 0px;
+}
+
 main {
     display: flex;
     flex-flow: row nowrap;
@@ -116,7 +121,6 @@ nav a:hover {
 .patterned_nav    {
     background: url(../images/patterned_nav.png) repeat-x;
     top: 0px;
-    position: sticky;
     width: 880px;
     height: 154px;
     padding-left: 120px;
@@ -197,17 +201,6 @@ button {
     cursor: pointer;
 }
 
-
-@media (min-width: 1000px)  {
-    .three .wrapper {
-        width: 1000px;
-        margin: 0 auto;
-        background-color: #ffffff;
-    }
-
-
-}
-
 @media (max-width: 1000px) {
     .three .wrapper {
         width: 100%;
@@ -223,12 +216,3 @@ button {
         width: 74px;
     }
 }
-/* 
-@media (max-width: 800px)  {
-    .three .wrapper {
-        width: 100%;
-        margin: 0 auto;
-        background-color: #ffffff;
-    }
-}
- */
