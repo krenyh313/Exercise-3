@@ -1,13 +1,22 @@
-function nameBoxes()
+function numOfBoxes()
+{
+    var fName = "keren";
+    var lName = "halpert";
+
+    var fNum = fName.length;
+    var lNum = lName.length;
+
+    generateBoxes(fNum * lNum);    
+}
+
+function generateBoxes(num)
 {
     var L3 = document.getElementById("L3");
     var sections = "";
 
-    // keren = 5, halpert = 7 ----> 5x7 = 35
-
     sections += '<section onmouseover="hoverOnLetter()" onmouseout="hoverOffLetter()"></section>';
 
-    for (i=1; i < 35; i++)
+    for (i=1; i < num; i++)
         sections += '<section></section>';
 
     L3.innerHTML = sections;
